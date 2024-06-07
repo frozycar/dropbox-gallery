@@ -66,9 +66,15 @@ app.use('/images', express.static(path.join(__dirname, 'public/cars')));
 app.use('/logo', express.static(path.join(__dirname, 'public')));
 app.use('/', express.static(path.join(__dirname, 'public/client')));
 
-app.listen(3000, () => {
+app.listen(3000, async () => {
     console.log('Server is running on port 3000');
     writeLog('SERVER', 'Server is running on port 3000');
+    // If pm2 keep restarting
+    // try {
+    //     await recursiveFileSearch(DROPBOX_PATH);	
+    // } catch (error) {
+    //     writeLog("SERVER", "ERROR while retrieving the files from dropbox");
+    // }
 });
 
 // DEACTIVATE THE INTERVAL, WE JUST UPDATE WHEN WE RESTART THE RASPI

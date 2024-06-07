@@ -5,10 +5,13 @@ cd /home/gelkor/Projects/dropbox-gallery/server
 
 # To run the following commands we have to install pm2 library
 # Update the dropbox files
-pm2 start dropbox.js --name dropbox
+pm2 start dropbox.js --name dropbox --no-autorestart
 
 # Start the server
 pm2 start index.js --name server
+
+# Let dropbox to update the new files
+sleep 20
 
 # Configure the chromium browser to start in kiosk mode
 xset s noblank

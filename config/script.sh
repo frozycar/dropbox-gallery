@@ -10,6 +10,7 @@ sudo apt update
 sudo apt upgrade
 
 sudo apt install wtype
+# Follow that steps: System options -> Boot/Auto Login -> Desktop Autologin => FINISH
 sudo raspi-config
 
 # Install Tailscale on Debian Bookworm

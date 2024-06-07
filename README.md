@@ -10,7 +10,7 @@ Application that downloads the dropbox images and display in a simple gallery
 4. Configure packages for kiosk mode
 5. Install `nvm` and `pm2`
 6. Configure SSH connection to access just with keys
-7. Run the app locally, not in Kiosk mode
+7. Clone the app locally (`git clone https://github.com/frozycar/dropbox-gallery.git`) and run but not in Kiosk mode
 8. Once the app works right, create `kiosk.service` to run the kiosk in the start up
 9. Install `firewalld` and `tailscale`
 

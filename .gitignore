@@ -13,6 +13,7 @@ server/public/cars/*
 server/public/client/*
 server/public/csv/*
 server/logs
+server/node_modules
 
 # Others
 .DS_Store

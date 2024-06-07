@@ -32,6 +32,7 @@ cd Projects
 git clone https://github.com/frozycar/dropbox-gallery.git
 # Copy the config files that we have in the local machine. /server/config.js
 # Install the packages in the server and client folders
+npm install
 # Create the bundle
 npm run build
 # Move the files from the client/dist folder to server/client folder

@@ -1,0 +1,16 @@
+# Client files
+client/dist
+
+# SSH keys. I know it is not secure to keep it locally but for that scenario it is OK
+keys
+
+# Server files
+server/config.js
+
+server/public/cars/*
+server/public/client/*
+server/public/csv/*
+server/logs
+
+# Others
+.DS_Store

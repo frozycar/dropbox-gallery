@@ -1,0 +1,5 @@
+img {
+  width: 100vw; /* set width to full screen width */
+  height: 100vh; /* set height to full screen height */
+  object-fit: cover;
+}

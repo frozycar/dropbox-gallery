@@ -1,0 +1,24 @@
+{
+  "name": "autogelkor-server",
+  "version": "1.0.0",
+  "description": "fetch images",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "dropbox": "node dropbox.js",
+    "refresh": "node utils/refreshToken.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
+    "dropbox": "^10.34.0",
+    "express": "^4.19.2",
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.1",
+    "nodemon": "^3.1.0"
+  }
+}

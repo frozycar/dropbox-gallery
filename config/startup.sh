@@ -1,8 +1,13 @@
 #!/bin/bash
 
-# Start the server
-# First install pm2 and after pm2 start index.js --name server
+# Locate in the server folder of the project
 cd /home/gelkor/Projects/dropbox-gallery/server
+
+# To run the following commands we have to install pm2 library
+# Update the dropbox files
+pm2 start dropbox.js --name dropbox
+
+# Start the server
 pm2 start index.js --name server
 
 # Configure the chromium browser to start in kiosk mode

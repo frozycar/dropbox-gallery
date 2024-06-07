@@ -71,11 +71,12 @@ app.listen(3000, () => {
     writeLog('SERVER', 'Server is running on port 3000');
 });
 
-setInterval(async () => {
-	try {
-		await recursiveFileSearch(DROPBOX_PATH);	
-	} catch (error) {
-		writeLog("SERVER", "ERROR while retrieving the files from dropbox");
-	}
-}, FETCH_DROPBOX_FILES_TIMER);
+// DEACTIVATE THE INTERVAL, WE JUST UPDATE WHEN WE RESTART THE RASPI
+// setInterval(async () => {
+// 	try {
+// 		await recursiveFileSearch(DROPBOX_PATH);	
+// 	} catch (error) {
+// 		writeLog("SERVER", "ERROR while retrieving the files from dropbox");
+// 	}
+// }, FETCH_DROPBOX_FILES_TIMER);
 

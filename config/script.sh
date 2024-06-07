@@ -12,4 +12,14 @@ sudo apt upgrade
 sudo apt install wtype
 sudo raspi-config
 
+# Install node
+sudo apt install curl -y 
+sudo apt install build-essential libssl-dev 
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash 
+source ~/.bashrc
+# Check the installation 
+command -v nvm 
+# Install node specific version
 nvm install 18.4.0
+# Install PM2 globally
+npm install pm2 -g

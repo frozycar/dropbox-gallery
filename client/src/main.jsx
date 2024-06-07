@@ -11,6 +11,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>,
 )
 
-setTimeout(() => {
-  window.location.reload();
-}, RELOAD_TIME); // 10 minutes
+// WE DO NOT RELOAD THE CLIENT, MIGHT CAUSE UNKNOWN LOOP
+// I GUESS IT IS NOT THE RIGHT WAY TO IMPLEMENT TO TIMEOUT
+// TODO: ADD IN ANOTHER WAY THE TIMEOUT
+// setTimeout(() => {
+//   window.location.reload();
+// }, RELOAD_TIME); // 10 minutes

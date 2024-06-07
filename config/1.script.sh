@@ -11,17 +11,8 @@ sudo apt upgrade
 
 sudo apt install wtype
 # Follow that steps: System options -> Boot/Auto Login -> Desktop Autologin => FINISH
-sudo raspi-config
-
-# Install Tailscale on Debian Bookworm
-curl -fsSL https://pkgs.tailscale.com/stable/debian/bookworm.noarmor.gpg | sudo tee /usr/share/keyrings/tailscale-archive-keyring.gpg >/dev/null
-curl -fsSL https://pkgs.tailscale.com/stable/debian/bookworm.tailscale-keyring.list | sudo tee /etc/apt/sources.list.d/tailscale.list
-sudo apt-get update
-sudo apt-get install tailscale
-# Confirm in the browser the session
-sudo tailscale up
-# Check the IP
-tailscale ip -4
+# Last time that I run, screen was not turning on
+#sudo raspi-config
 
 # Install node
 sudo apt install curl -y 
@@ -34,3 +25,18 @@ command -v nvm
 nvm install 18.4.0
 # Install PM2 globally
 npm install pm2 -g
+
+# Clone the repository
+mkdir ~/Projects
+cd Projects
+git clone https://github.com/frozycar/dropbox-gallery.git
+# Copy the config files that we have in the local machine. /server/config.js
+# Install the packages in the server and client folders
+# Create the bundle
+npm run build
+# Move the files from the client/dist folder to server/client folder
+# Download all the files
+npm run dropbox
+# Run the server
+npm run server
+# Open browser and access to http://localhost:3000

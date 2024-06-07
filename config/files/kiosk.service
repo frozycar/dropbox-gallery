@@ -7,7 +7,7 @@ After=graphical.target
 Environment=DISPLAY=:0.0
 Environment=XAUTHORITY=/home/gelkor/.Xauthority
 Type=simple
-ExecStart=/bin/bash /home/gelkor/Projects/dropbox-gallery/config/startup.sh
+ExecStart=/bin/bash /home/gelkor/Projects/dropbox-gallery/config/files/startup.sh
 Restart=on-abort
 User=gelkor
 Group=gelkor

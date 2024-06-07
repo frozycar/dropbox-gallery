@@ -1,11 +1,13 @@
 # Client files
 client/dist
+client/node_modules
 
 # SSH keys. I know it is not secure to keep it locally but for that scenario it is OK
 keys
 
 # Server files
 server/config.js
+client/node_modules
 
 server/public/cars/*
 server/public/client/*

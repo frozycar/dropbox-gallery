@@ -13,6 +13,7 @@ Application that downloads the dropbox images and display in a simple gallery
 7. Clone the app locally (`git clone https://github.com/frozycar/dropbox-gallery.git`) and run but not in Kiosk mode
 8. Once the app works right, create `kiosk.service` to run the kiosk in the start up
 9. Install `firewalld` and `tailscale`
+10. Create the cron jobs to restart the raspi
 
 ## Initialisation of Project
 

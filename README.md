@@ -15,6 +15,10 @@ Application that downloads the dropbox images and display in a simple gallery
 9. Install `firewalld` and `tailscale`
 10. Create the cron jobs to restart the raspi
 
+### Problems booting OS
+
+If we got stuck in the welcome page, press `ctrl + some_letter`
+
 ## Initialisation of Project
 
 1. Create `public` folder and inside `cars` and `csv`
